@@ -1,0 +1,58 @@
+[
+  {
+    "title": "The Matrix",
+    "genres": "sci-fi,action,cyberpunk",
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers",
+    "characters": "Neo,Morpheus,Trinity,Agent Smith",
+    "year": 1999,
+    "director": "The Wachowskis"
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "genres": "fantasy,adventure,epic",
+    "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth",
+    "characters": "Frodo,Gandalf,Aragorn,Legolas,Gimli",
+    "year": 2001,
+    "director": "Peter Jackson"
+  },
+  {
+    "title": "Blade Runner",
+    "genres": "sci-fi,cyberpunk,thriller",
+    "description": "A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to the earth seeking their creator",
+    "characters": "Rick Deckard,Roy Batty,Rachael",
+    "year": 1982,
+    "director": "Ridley Scott"
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "genres": "fantasy,magic,adventure",
+    "description": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world",
+    "characters": "Harry Potter,Hermione Granger,Ron Weasley,Dumbledore",
+    "year": 2001,
+    "director": "Chris Columbus"
+  },
+  {
+    "title": "Transformers",
+    "genres": "sci-fi,action,robots",
+    "description": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth",
+    "characters": "Optimus Prime,Bumblebee,Megatron,Sam Witwicky",
+    "year": 2007,
+    "director": "Michael Bay"
+  },
+  {
+    "title": "John Wick",
+    "genres": "action,thriller,crime",
+    "description": "An ex-hit-man comes out of retirement to track down the gangsters that took everything from him",
+    "characters": "John Wick,Helen Wick,Iosef Tarasov",
+    "year": 2014,
+    "director": "Chad Stahelski"
+  },
+  {
+    "title": "Dune",
+    "genres": "sci-fi,epic,desert",
+    "description": "Feature adaptation of Frank Herbert's science fiction novel about the son of a noble family entrusted with the protection of the most valuable asset in the galaxy",
+    "characters": "Paul Atreides,Duke Leto,Jessica,Duncan Idaho",
+    "year": 2021,
+    "director": "Denis Villeneuve"
+  }
+]

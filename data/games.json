@@ -1,0 +1,58 @@
+[
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "genres": "RPG,fantasy,open-world",
+    "description": "As war rages on throughout the Northern Realms, you take on the greatest contract of your life - tracking down the Child of Prophecy",
+    "characters": "Geralt of Rivia,Yennefer,Triss Merigold,Ciri",
+    "year": 2015,
+    "platform": "PC, PlayStation, Xbox"
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "genres": "RPG,cyberpunk,open-world",
+    "description": "An open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification",
+    "characters": "V,Johnny Silverhand,Panam Palmer,Judy Alvarez",
+    "year": 2020,
+    "platform": "PC, PlayStation, Xbox"
+  },
+  {
+    "title": "The Elder Scrolls V: Skyrim",
+    "genres": "RPG,fantasy,open-world",
+    "description": "Epic fantasy open world game where you play as the Dragonborn, a prophesied hero with the power to defeat dragons",
+    "characters": "Dragonborn,Lydia,Delphine,Alduin",
+    "year": 2011,
+    "platform": "PC, PlayStation, Xbox, Switch"
+  },
+  {
+    "title": "Mass Effect",
+    "genres": "RPG,sci-fi,space",
+    "description": "An action role-playing game set in the year 2183, where organic life is threatened by a race of mechanical beings",
+    "characters": "Commander Shepard,Garrus Vakarian,Tali'Zorah,Liara T'Soni",
+    "year": 2007,
+    "platform": "PC, PlayStation, Xbox"
+  },
+  {
+    "title": "Transformers: Fall of Cybertron",
+    "genres": "action,robots,third-person shooter",
+    "description": "The final battle for the fate of Cybertron between the Autobots and Decepticons",
+    "characters": "Optimus Prime,Megatron,Bumblebee,Starscream",
+    "year": 2012,
+    "platform": "PC, PlayStation, Xbox"
+  },
+  {
+    "title": "Deus Ex: Human Revolution",
+    "genres": "RPG,cyberpunk,stealth",
+    "description": "Set in a cyberpunk future where human augmentation has advanced considerably, but with serious social side effects",
+    "characters": "Adam Jensen,Megan Reed,David Sarif,Frank Pritchard",
+    "year": 2011,
+    "platform": "PC, PlayStation, Xbox"
+  },
+  {
+    "title": "Star Wars Jedi: Fallen Order",
+    "genres": "action,adventure,sci-fi",
+    "description": "A young Padawan on a quest to rebuild the Jedi Order after the events of Episode III – Revenge of the Sith",
+    "characters": "Cal Kestis,BD-1,Cere Junda,Greez Dritus",
+    "year": 2019,
+    "platform": "PC, PlayStation, Xbox"
+  }
+]

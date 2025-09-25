@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Search Results - CrossSuggest{% endblock %}
+
+{% block content %}
+<div class="search-box">
+    <form method="POST" action="/search">
+        <input type="text" name="query" class="search-input" placeholder="Enter a title or search terms..." value="{{ query or '' }}" required>
+        
+        <div class="mode-selection">
+            <div class="mode-option">
+                <input type="radio" id="title" name="mode" value="title" {% if mode == 'title' %}checked{% endif %}>
+                <label for="title">Title Mode</label>
+            </div>
+            <div class="mode-option">
+                <input type="radio" id="terms" name="mode" value="terms" {% if mode == 'terms' %}checked{% endif %}>
+                <label for="terms">Terms Mode</label>
+            </div>
+        </div>
+        
+        <button type="submit" class="search-button">Search</button>
+    </form>
+</div>
+
+{% if error %}
+<div class="results-section">
+    <div class="error">{{ error }}</div>
+</div>
+{% else %}
+
+<div class="results-section">
+    <h2 style="color: #667eea; margin-bottom: 20px;">
+        Search Results for "{{ query }}" ({{ mode.title() }} Mode)
+    </h2>
+    
+    {% set has_results = false %}
+    {% for media_type, items in results.items() %}
+        {% if items %}
+            {% set has_results = true %}
+            <div class="media-category">
+                <div class="category-title">{{ media_type.title() }} ({{ items|length }} found)</div>
+                {% for item in items %}
+                <div class="media-item">
+                    <div class="media-title">
+                        {{ item.title }}
+                        <span class="match-score">{{ "%.0f"|format(item.match_score) }}% match</span>
+                    </div>
+                    <div class="media-info">
+                        {% if item.year %}Year: {{ item.year }} | {% endif %}
+                        {% if item.genres %}Genres: {{ item.genres }}{% endif %}
+                        {% if item.author %} | Author: {{ item.author }}{% endif %}
+                        {% if item.director %} | Director: {{ item.director }}{% endif %}
+                        {% if item.platform %} | Platform: {{ item.platform }}{% endif %}
+                    </div>
+                    <div class="media-description">{{ item.description }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endfor %}
+    
+    {% if not has_results %}
+    <div class="no-results">No direct matches found for your search.</div>
+    {% endif %}
+</div>
+
+{% if cross_recommendations %}
+<div class="results-section">
+    <h2 style="color: #667eea; margin-bottom: 20px;">Cross-Category Recommendations</h2>
+    
+    {% for media_type, items in cross_recommendations.items() %}
+        {% if items %}
+        <div class="media-category">
+            <div class="category-title">Recommended {{ media_type.title() }}</div>
+            {% for item in items %}
+            <div class="media-item">
+                <div class="media-title">
+                    {{ item.title }}
+                    <span class="match-score">{{ "%.0f"|format(item.match_score) }}% similarity</span>
+                </div>
+                <div class="media-info">
+                    {% if item.year %}Year: {{ item.year }} | {% endif %}
+                    {% if item.genres %}Genres: {{ item.genres }}{% endif %}
+                    {% if item.author %} | Author: {{ item.author }}{% endif %}
+                    {% if item.director %} | Director: {{ item.director }}{% endif %}
+                    {% if item.platform %} | Platform: {{ item.platform }}{% endif %}
+                </div>
+                <div class="media-description">{{ item.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endif %}
+
+{% endif %}
+{% endblock %}

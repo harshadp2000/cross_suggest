@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Dune",
+    "genres": "sci-fi,epic,desert",
+    "description": "Set in the distant future amidst a feudal interstellar society in which various noble houses control planetary fiefs",
+    "characters": "Paul Atreides,Duke Leto,Lady Jessica,Stilgar",
+    "year": 1965,
+    "author": "Frank Herbert"
+  },
+  {
+    "title": "The Lord of the Rings",
+    "genres": "fantasy,epic,adventure",
+    "description": "An epic high fantasy novel that follows the quest to destroy the One Ring and defeat the Dark Lord Sauron",
+    "characters": "Frodo Baggins,Gandalf,Aragorn,Legolas,Gimli",
+    "year": 1954,
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "genres": "fantasy,magic,coming-of-age",
+    "description": "A young wizard's first year at Hogwarts School of Witchcraft and Wizardry",
+    "characters": "Harry Potter,Hermione Granger,Ron Weasley,Albus Dumbledore",
+    "year": 1997,
+    "author": "J.K. Rowling"
+  },
+  {
+    "title": "Neuromancer",
+    "genres": "cyberpunk,sci-fi,dystopian",
+    "description": "A damaged ex-computer jockey is hired for one last run against an artificial intelligence",
+    "characters": "Case,Molly Millions,Armitage,Wintermute",
+    "year": 1984,
+    "author": "William Gibson"
+  },
+  {
+    "title": "The Witcher: The Last Wish",
+    "genres": "fantasy,magic,short stories",
+    "description": "A collection of short stories introducing Geralt of Rivia, a witcher - a mutated monster hunter for hire",
+    "characters": "Geralt of Rivia,Yennefer,Dandelion,Triss Merigold",
+    "year": 1993,
+    "author": "Andrzej Sapkowski"
+  },
+  {
+    "title": "Foundation",
+    "genres": "sci-fi,space,empire",
+    "description": "A mathematician develops a new field of science called psychohistory and uses it to preserve knowledge during the fall of the Galactic Empire",
+    "characters": "Hari Seldon,Salvor Hardin,Hober Mallow",
+    "year": 1951,
+    "author": "Isaac Asimov"
+  },
+  {
+    "title": "The Hobbit",
+    "genres": "fantasy,adventure,quest",
+    "description": "A reluctant Hobbit joins a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug",
+    "characters": "Bilbo Baggins,Gandalf,Thorin Oakenshield,Smaug",
+    "year": 1937,
+    "author": "J.R.R. Tolkien"
+  }
+]

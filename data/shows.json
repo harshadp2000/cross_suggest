@@ -1,0 +1,58 @@
+[
+  {
+    "title": "The Witcher",
+    "genres": "fantasy,adventure,magic",
+    "description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts",
+    "characters": "Geralt,Yennefer,Ciri,Jaskier",
+    "year": 2019,
+    "network": "Netflix"
+  },
+  {
+    "title": "Stranger Things",
+    "genres": "sci-fi,horror,supernatural",
+    "description": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back",
+    "characters": "Eleven,Mike Wheeler,Dustin Henderson,Jim Hopper",
+    "year": 2016,
+    "network": "Netflix"
+  },
+  {
+    "title": "Game of Thrones",
+    "genres": "fantasy,drama,epic",
+    "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia",
+    "characters": "Jon Snow,Daenerys Targaryen,Tyrion Lannister,Arya Stark",
+    "year": 2011,
+    "network": "HBO"
+  },
+  {
+    "title": "Cyberpunk: Edgerunners",
+    "genres": "cyberpunk,anime,sci-fi",
+    "description": "A street kid trying to survive in Night City - a technology and body modification-obsessed city of the future",
+    "characters": "David Martinez,Lucy,Rebecca,Maine",
+    "year": 2022,
+    "network": "Netflix"
+  },
+  {
+    "title": "The Mandalorian",
+    "genres": "sci-fi,space,adventure",
+    "description": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic",
+    "characters": "Din Djarin,Grogu,Cara Dune,Moff Gideon",
+    "year": 2019,
+    "network": "Disney+"
+  },
+  {
+    "title": "Arcane",
+    "genres": "animation,fantasy,steampunk",
+    "description": "Set in utopian Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions-and the power that will tear them apart",
+    "characters": "Vi,Jinx,Jayce,Viktor",
+    "year": 2021,
+    "network": "Netflix"
+  },
+  {
+    "title": "The Expanse",
+    "genres": "sci-fi,space,political",
+    "description": "A police detective in the asteroid belt, the first officer of an interplanetary ice freighter, and an earth-bound United Nations executive slowly discover a vast conspiracy",
+    "characters": "James Holden,Joe Miller,Chrisjen Avasarala,Naomi Nagata",
+    "year": 2015,
+    "network": "Syfy"
+  }
+]

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="search-box">
+    <form method="POST" action="/search">
+        <input type="text" name="query" class="search-input" placeholder="Enter a title or search terms..." required>
+        
+        <div class="mode-selection">
+            <div class="mode-option">
+                <input type="radio" id="title" name="mode" value="title" checked>
+                <label for="title">Title Mode</label>
+            </div>
+            <div class="mode-option">
+                <input type="radio" id="terms" name="mode" value="terms">
+                <label for="terms">Terms Mode</label>
+            </div>
+        </div>
+        
+        <button type="submit" class="search-button">Search</button>
+    </form>
+    
+    <div style="margin-top: 20px; font-size: 0.9em; color: #666;">
+        <p><strong>Title Mode:</strong> Search for exact or partial matches of media titles</p>
+        <p><strong>Terms Mode:</strong> Search through genres, descriptions, and character names</p>
+    </div>
+</div>
+{% endblock %}
