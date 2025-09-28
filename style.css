@@ -1,0 +1,114 @@
+/* --- THEME-AGNOSTIC RGBA COLOR PALETTE --- */
+:root {
+    /* Base RGB values for colors */
+    --movie-rgb: 76, 175, 80;
+    --show-rgb: 33, 150, 243;
+    --book-rgb: 255, 152, 0;
+    --game-rgb: 156, 39, 176;
+
+    /* Base RGB values for text */
+    --text-light-rgb: 0, 0, 0;
+    --text-dark-rgb: 234, 234, 234;
+}
+
+/* --- FONT & THEME COLORING --- */
+
+/* Default Light Theme Colors */
+body {
+    color: rgba(var(--text-light-rgb), 0.9);
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] body {
+    color: rgba(var(--text-dark-rgb), 0.9);
+}
+
+
+/* --- RECOMMENDATION ITEM STYLING --- */
+.media-container {
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    border-left: 4px solid;
+}
+.media-container span {
+    font-weight: 500;
+}
+
+.movie-style { background-color: rgba(var(--movie-rgb), 0.1); border-left-color: rgba(var(--movie-rgb), 1); }
+.show-style  { background-color: rgba(var(--show-rgb), 0.1);  border-left-color: rgba(var(--show-rgb), 1); }
+.book-style  { background-color: rgba(var(--book-rgb), 0.1);  border-left-color: rgba(var(--book-rgb), 1); }
+.game-style  { background-color: rgba(var(--game-rgb), 0.1);  border-left-color: rgba(var(--game-rgb), 1); }
+
+.media-prefix {
+    font-weight: bold;
+    margin-right: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    min-width: 32px;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: rgba(128, 128, 128, 0.9); /* Fallback */
+}
+
+.movie-style .media-prefix { background-color: rgba(var(--movie-rgb), 0.9); }
+.show-style .media-prefix  { background-color: rgba(var(--show-rgb), 0.9); }
+.book-style .media-prefix  { background-color: rgba(var(--book-rgb), 0.9); }
+.game-style .media-prefix  { background-color: rgba(var(--game-rgb), 0.9); }
+
+
+/* --- SIDEBAR STYLING --- */
+[data-testid="stSidebar"] {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.sidebar-content h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.sidebar-content p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* --- LEGEND STYLING --- */
+.legend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: stretch;
+    height: 32px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.legend-icon, .legend-label {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.legend-icon {
+    justify-content: center;
+}
+
+.legend-label {
+    font-weight: 500;
+}
+
+/* Apply colors to legend */
+.legend-movie { background-color: rgba(var(--movie-rgb), 0.1); }
+.legend-show { background-color: rgba(var(--show-rgb), 0.1); }
+.legend-book { background-color: rgba(var(--book-rgb), 0.1); }
+.legend-game { background-color: rgba(var(--game-rgb), 0.1); }
