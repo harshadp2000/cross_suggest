@@ -1,6 +1,6 @@
-# Cross-Media Recommender System
+# CrossSuggest: A Cross-Media Recommendation Engine
 
-This project is a sophisticated content-based recommender system that provides cross-media suggestions across books, games, movies, and shows. The system analyzes textual content (overview, genres, and titles) to generate relevant recommendations across different media types using TF-IDF vectorization and cosine similarity.
+This project is a content-based recommender system that provides cross-media suggestions across books, games, movies, and shows. The system analyzes textual content (overview, genres, and titles) to generate relevant recommendations across different media types using TF-IDF vectorization and cosine similarity.
 
 <img width="1614" height="906" alt="image" src="https://github.com/user-attachments/assets/519a44fe-b2e2-41c2-af60-490bdb08b3d7" />
 
