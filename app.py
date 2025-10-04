@@ -9,7 +9,7 @@ CHUNK_SIZE = 5000
 SEPARATOR = "\u2003"
 RECS_PER_PAGE = 10
 
-# --- Page Configuration ---
+# Page Configuration
 st.set_page_config(
     page_title="Cross-Media Recommender",
     page_icon="✨",
@@ -17,7 +17,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# --- Function to load external CSS ---
+# Function to load external CSS
 def local_css(file_name):
     try:
         with open(file_name) as f:
@@ -25,7 +25,7 @@ def local_css(file_name):
     except FileNotFoundError:
         st.warning(f"CSS file not found: {file_name}. Styles will not be applied.")
 
-# --- Data Loading and Transformation ---
+# Data Loading and Transformation
 @st.cache_data
 def load_data():
     try:
@@ -49,7 +49,7 @@ def load_data():
         st.error(f"An error occurred while loading or processing the data: {e}")
         return None
 
-# --- Recommendation Logic ---
+# Recommendation Logic
 @st.cache_data
 def get_all_recommendations(media_name_with_prefix):
     try:
@@ -73,7 +73,7 @@ def get_all_recommendations(media_name_with_prefix):
     
     return master_df.iloc[media_indices], None
 
-# --- Initialize State ---
+# Initialize State
 def init_state():
     if 'page' not in st.session_state:
         st.session_state.page = 0  # 0 means no recommendations shown yet
@@ -82,7 +82,7 @@ def init_state():
     if 'recommendations' not in st.session_state:
         st.session_state.recommendations = pd.DataFrame()
 
-# --- UI Rendering ---
+# UI Rendering
 master_df = load_data()
 if master_df is None:
     st.stop()
@@ -90,7 +90,7 @@ if master_df is None:
 init_state()
 local_css("style.css")
 
-# --- Sidebar --- 
+# Sidebar 
 with st.sidebar:
     st.markdown("### App Information")
     st.markdown("""
@@ -116,14 +116,14 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-# --- Main Page --- 
+# Main Page 
 st.title('Cross-Media Recommender System')
 
 media_list = master_df['name_with_prefix'].values
 if 'placeholder' not in st.session_state or st.session_state['placeholder'] not in media_list:
     st.session_state['placeholder'] = random.choice(media_list)
 
-# --- Layout for Search and Button ---
+# Layout for Search and Button
 col1, col2 = st.columns([5, 2])
 
 with col1:
@@ -135,7 +135,7 @@ with col1:
         label_visibility="collapsed"
     )
 
-# --- Main Logic for Instant Recommendations & Pagination ---
+# Main Logic for Instant Recommendations & Pagination
 if selected_media and st.session_state.current_selection != selected_media:
     st.session_state.current_selection = selected_media
     st.session_state.page = 1  # Show first page on new selection
@@ -147,7 +147,7 @@ if selected_media and st.session_state.current_selection != selected_media:
         else:
             st.session_state.recommendations = recs
 
-# --- Button Logic ---
+# Button Logic
 button_text = "More Recommendations" if st.session_state.page > 0 else "Show Recommendations"
 with col2:
     if st.button(button_text):
@@ -156,7 +156,7 @@ with col2:
         elif selected_media:
             st.session_state.page = 1 # Show the first page if nothing is shown yet
 
-# --- Display Recommendations ---
+# Display Recommendations
 if st.session_state.page > 0:
     if not st.session_state.recommendations.empty:
         st.subheader("Here are some recommendations for you:")
