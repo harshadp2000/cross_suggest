@@ -1,4 +1,4 @@
-/* --- THEME-AGNOSTIC RGBA COLOR PALETTE --- */
+/* THEME-AGNOSTIC RGBA COLOR PALETTE */
 :root {
     /* Base RGB values for colors */
     --movie-rgb: 76, 175, 80;
@@ -11,7 +11,7 @@
     --text-dark-rgb: 234, 234, 234;
 }
 
-/* --- FONT & THEME COLORING --- */
+/* FONT & THEME COLORING */
 
 /* Default Light Theme Colors */
 body {
@@ -24,7 +24,7 @@ body {
 }
 
 
-/* --- RECOMMENDATION ITEM STYLING --- */
+/* RECOMMENDATION ITEM STYLING */
 .media-container {
     padding: 8px 12px;
     border-radius: 6px;
@@ -61,7 +61,7 @@ body {
 .game-style .media-prefix  { background-color: rgba(var(--game-rgb), 0.9); }
 
 
-/* --- SIDEBAR STYLING --- */
+/* SIDEBAR STYLING */
 [data-testid="stSidebar"] {
     background-color: rgba(128, 128, 128, 0.1);
 }
@@ -77,7 +77,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* --- LEGEND STYLING --- */
+/* LEGEND STYLING */
 .legend {
     display: flex;
     flex-direction: column;
