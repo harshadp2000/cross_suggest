@@ -4,7 +4,7 @@ This project is a content-based recommender system that provides cross-media sug
 
 <img width="1614" height="906" alt="image" src="https://github.com/user-attachments/assets/519a44fe-b2e2-41c2-af60-490bdb08b3d7" />
 
-## ✨ Features
+## Features
 
 - **Cross-Media Recommendations**: Seamlessly suggests related content across different media types
 - **Interactive UI**: Clean and intuitive interface built with Streamlit
@@ -17,7 +17,7 @@ This project is a content-based recommender system that provides cross-media sug
   - 🎮 Games
 - **Pagination**: Displays recommendations in manageable chunks with "More Recommendations" feature
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 
 ### Data Processing Pipeline
 1. **Data Loading**: Imports separate datasets for books, games, movies, and shows
@@ -40,7 +40,7 @@ This project is a content-based recommender system that provides cross-media sug
 - **Caching**: Implements Streamlit's caching for performance optimization
 - **Memory Management**: Real-time memory usage monitoring
 
-## 📊 Datasets
+## Datasets
 
 The system uses four primary datasets located in the `data/` directory:
 - `books.csv`: Book information and metadata
@@ -48,7 +48,7 @@ The system uses four primary datasets located in the `data/` directory:
 - `movies.csv`: Movie information and synopses
 - `shows.csv`: TV show details and descriptions
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -61,7 +61,7 @@ The system uses four primary datasets located in the `data/` directory:
    pip install -r requirements.txt
    ```
 
-## 📝 Dependencies
+## Dependencies
 
 - Python 3.x
 - Key packages (with versions):
@@ -72,7 +72,7 @@ The system uses four primary datasets located in the `data/` directory:
   - psutil==5.9.5: System and process monitoring
   - pickle5==0.0.12: Data serialization
 
-## 🔧 Setup and Usage
+## Setup and Usage
 
 1. **Data Preparation**:
    Run the Jupyter notebook to process data and generate necessary files:
@@ -89,7 +89,7 @@ The system uses four primary datasets located in the `data/` directory:
    ```
    The application will be available at `http://localhost:8501`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -108,7 +108,7 @@ The system uses four primary datasets located in the `data/` directory:
     └── sim_chunk_5000.pkl
 ```
 
-## 🔍 How It Works
+## How It Works
 
 1. **Data Processing**:
    - Combines data from all media types
@@ -126,14 +126,14 @@ The system uses four primary datasets located in the `data/` directory:
    - Displays memory usage statistics
    - Uses visual indicators for media types
 
-## 🛡️ Performance Considerations
+## Performance Considerations
 
 - Implements chunked similarity matrices to handle large datasets efficiently
 - Uses Streamlit's caching mechanism for faster subsequent recommendations
 - Monitors and displays memory usage in real-time
 - Paginates results to manage memory and improve user experience
 
-## 🔜 Future Enhancements
+## Future Enhancements
 
 1. **Technical Improvements**:
    - Implement collaborative filtering
@@ -152,11 +152,11 @@ The system uses four primary datasets located in the `data/` directory:
    - Detailed media information cards
    - Mobile-responsive design improvements
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
