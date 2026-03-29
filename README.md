@@ -160,7 +160,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 📧 Contact
+## Contact
 
 For questions and feedback, please reach out to the repository owner:
 [harshadpawarm](https://github.com/harshadpawarm)
